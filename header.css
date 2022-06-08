@@ -1,0 +1,21 @@
+/* Header */
+.nav_items {
+    background-color: #377245;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+ }
+.nav_items ul >li {
+    margin-top: 1px;
+    display: inline-block;
+    margin-left: 200px;
+} 
+  .nav_items ul > li:nth-child(-n + 7) > a { /* <ul>하위 7번째 <li>까지 각각 내부의 <a> 태그 접근 */
+    color: #fff;
+    text-decoration: none;
+
+}
+#symbol_mark{
+    width: 24px;
+    height: 24px;
+}
