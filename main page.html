@@ -1,36 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reduce temperature</title>
-    <link rel="stylesheet" href="header.css" />
-    <link rel="stylesheet" href="main.css" />
-    <!-- boxicons -->
-    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-  </head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reduce temperature</title>
+  <link rel="stylesheet" href="header.css" />
+  <link rel="stylesheet" href="main.css" />
+  <!-- boxicons -->
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang&family=Nanum+Myeongjo:wght@700&display=swap" rel="stylesheet">
+</head>
+
 <body>
-    <header>
-          <div class="nav_items">
-            <ul>
-              <li><img id="symbol_mark" src="https://cdn-icons.flaticon.com/png/512/3906/premium/3906449.png?token=exp=1654650674~hmac=cd9dbd51d72144a3bfba636a41bf3fb2"></li>
-              <li><a href="#">지구 온도계</a></li>
-              <li><a href="#">자투리 레시피</a></li>
-              <li><a href="#">소통방</a></li>
-              <li><a href="#">쓰레기 배출 요령</a></li>
-            </ul>
-          </div>
-    </header>
-    <main>
-      <div class="background_img">
+  <header>
+    <button class="button_mark" onclick="location.href='main page.html'"><h1 class="RTT">RTT<img class="symbol_mark" src="organic-product.png"></h1></button>
+    <nav class="nav_items">
+      <li><button onclick="location.href='지구온도계.html'">지 구 온 도 계</button></li>
+      <li><button onclick="location.href='자투리레시피.html'">자 투 리 레 시 피</button></li>
+      <li><button onclick="location.href='소통방.html'">소 통 방</button></li>
+    </nav>
+  </header>
+
+  
+  <main>
+    <!--배경 이미지 -->
+    <img class="background_img" src="main2_2.jpg">
+    <div class="wrapper">
+    <div class="search_box">
+      <form class="search_form">
+        <input class="search_txt" type="search" placeholder="검색하시오">
+      </form>  
+      <button class="search_btn" type="submit" ><img id="search_icon"src="search-alt-regular-36 (1).png"></button>
+    </div>
+      <div class="search_inner">
+        <div class="allDelete">
+          <h3 class="tit">최근 검색어</h3>
+          <span class="delete_btn">X</span>
+        </div>
+        <p class="txt"></p>
+        <ul id="list"></ul>
       </div>
-      <div class="search_box">
-          <input class="search_txt" type="text" placeholder="검색하시오">
-          <input class="search_btn" type="button">
-      </div>
-      <!-- 검색창, 배경 이미지 -->
-      <!-- <h1>쓰레기 배출 요령</h1> -->
-      
-    </main>
+    
+  </div>
+
+  
+    <!-- 추천 영상 -->
+    <div class="video_text">Videos</div>
+    <div class="videos">
+      <iframe class="video1" width="500" height="280" src="https://www.youtube.com/embed/k8Ov_zW2NPo" title="YouTube video player" 
+      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen></iframe>
+      <iframe width="500" height="280" src="https://www.youtube.com/embed/yYQCHZbrgB4" title="YouTube video player" 
+      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen></iframe>
+      <iframe width="500" height="280" src="https://www.youtube.com/embed/lliiwxe6quk" title="YouTube video player" 
+      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen></iframe>
+    </div>
+  </main>
 </body>

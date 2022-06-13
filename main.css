@@ -1,11 +1,10 @@
 .background_img{
-    background-image: url('main2_2.jpg');
     height: 580px;
-    width: 0,auto;
+    width: 100%;
     opacity: 0.5;
 }
 .search_box {
-    border:1px solid #688C45;
+    border:1px solid #B7F0B1;
     position:relative;
     max-width:500px;
     margin:0 auto;
@@ -13,6 +12,7 @@
     border-radius: 8px;
 }
 .search_txt {
+    font-family: 'Gowun Batang', serif;
     /* border: 3px solid #688C45;
     margin-top: 200px;
     margin-left: 400px;
@@ -26,7 +26,8 @@
     display:block;
     width:100%;
     padding:30px;
-    padding-right:60px;
+    padding-right:50px;
+    padding-left: 80px;
     box-sizing:border-box;
     font-size:1rem;
     opacity: 0.7;
@@ -35,11 +36,36 @@
 .search_btn {
     position:absolute;
     top:50%;
-    right:20px;
+    right: 450px;
     transform:translateY(-50%);
     height: 40px;
     width: 40px;
-    border: 1px solid #688C45;
-    border-radius: 15px;
-    background-color: #688C45;
+    border: none;
+    border-radius: 30px;
+    background-color: #fff;
+    opacity: 0.7;
+}
+#search_icon{
+    height: 48px;
+    width: 48px;
+    margin-top: 4px;
+}
+.box_text {
+    margin-top: -100px;
+}
+.recommend_video {
+    margin-top: 40px;
+}
+.video_text {
+    color: #B7F0B1;
+    font-weight: bold;
+    font-size: 44px;
+}
+.video1 {
+    border-radius: 14px 0px 0px 14px;
+}
+.search_btn:hover {
+    box-shadow: 200px 0 0 0 rgba(0,0,0,0.25) inset, 
+    -200px 0 0 0 rgba(0,0,0,0.25) inset;
+    border-radius: 30px;
 }
