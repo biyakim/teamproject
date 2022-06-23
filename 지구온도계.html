@@ -7,6 +7,9 @@
     <title>Reduce temperature</title>
     <!-- css 연결 -->
     <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="지구온도계.css">
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
 <body>
   <header>
@@ -19,7 +22,23 @@
   </header>
     
     <main>
-        <h1>지구온도계</h1>
+    <div class="left">
+      <img src="https://cdn-icons.flaticon.com/png/512/2100/premium/2100130.png?token=exp=1655598830~hmac=d1be20c7c0a993e7b3de2d004cddc083">
+      <button id="click_btn"></button>
+      <div id="click_message" >
+        <p> 지구의 온도가 1도 오르면?</p>
+        <img class="earth_img" src="https://cdn-icons-png.flaticon.com/512/614/614643.png">
+      </div>
+    </div>
+
+    <div class="right">
+      <img id="img" src="https://cdn-icons-png.flaticon.com/512/401/401078.png">
+      <button id="one" class='one' onclick="show_img('one','img')" >지속되는 가뭄, 물 부족 인구 5천만명</button>
+      <button id="two" class='two' onclick="show_img('two','img')">10% 육상생물 멸종위기</button>
+      <button id="three" class='three' onclick="show_img('three','img')">기후변화로 인한 사망 30만명</button>
+    </div>
     </main>
+
+    <script src="지구온도계.js"></script>
 </body>
 </html>

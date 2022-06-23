@@ -1,21 +1,12 @@
-const searchForm = document.querySelector('.search_form');
-const searchTxt = searchForm.querySelector('.searchTxt');
-const list = document.querySelector('.list');
-const allDelete = document.querySelector('.allDelete');
-const txt = document.querySelector('.txt');
-const ITEMS_KEY = "todos";
+const print_result = (buttonId, txtId, imgId) => {
+    //html에서 js로 요소 가져옥 
+    const button = document.getElementById(buttonId);
+    const txt = document.getElementById(txtId);
+    const img = document.getElementById(imgId);
 
-let items = new Array();
-
-function saveItems() {  //item을 localStorage에 저장
-    typeof(Storage) !== 'undefined' && localStorage.setItem(ITEMS_KEY, JSON.stringify(items));
-};
-
-function allDelete() { //전체 item을 삭제 
-    localStorage.clear(items);
+    button.addEventListener('click', () => {
+        txt.classList.toggle('show_txt');
+        img.classList.toggle('show_img');
+    })
 }
-
-function deleteItem() {
-    const li = e.target.parentElement;
-    li.remove();
-}
+print_result("search_btn","trash_txt","trash_img");

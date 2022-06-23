@@ -25,41 +25,46 @@
     </nav>
   </header>
 
-  
   <main>
     <!--배경 이미지 -->
     <img class="background_img" src="main2_2.jpg">
-    <div class="wrapper">
+      <div class="text">쓰 레 기 배 출 요 령 </div>
     <div class="search_box">
       <form class="search_form">
-        <input class="search_txt" type="search" placeholder="검색하시오">
+        <input id="search_txt" class="search_txt" type="search" placeholder="ex)컵라면 용기">
       </form>  
-      <button class="search_btn" type="submit" ><img id="search_icon"src="search-alt-regular-36 (1).png"></button>
+      <button id="search_btn" class="search_btn" type="submit" ><img id="search_icon" src="search-alt-regular-36 (1).png"></button>
     </div>
-      <div class="search_inner">
-        <div class="allDelete">
-          <h3 class="tit">최근 검색어</h3>
-          <span class="delete_btn">X</span>
-        </div>
-        <p class="txt"></p>
-        <ul id="list"></ul>
-      </div>
-    
+  <!-- 검색 결과 -->
+  <div class="result">
+    <p>검색결과_<img src="https://cdn-icons-png.flaticon.com/512/4148/4148284.png" width="48px" height="48px"></p>
+        <p id="result_txt">컵라면 용기</p>
+    <div>
+      <img class="trash_img" id="trash_img" src="https://newsimg.hankookilbo.com/cms/articlerelease/2021/04/13/8270d579-9d3b-4446-a4ae-41efb0db2195.jpg">
+      <p class="trash_txt" id="trash_txt">스티로폼 컵라면 용기(육개장 사발면 등) 물로 세척한 후 햇빛에 말리면 용기에 스며든 기름과 국물 자국이 깨끗이 사라져요.
+        컵라면 용기는 스티로폼으로 분리배출하세요. 
+      </p>
+      <p class="trash_txt">라면 국물이 배어있거나 음식물이 완전히 제거되지 않은 컵라면 용기는 재질 상관없이 재활용이 불가능해요. 
+        깨끗이 씻어낼 수 없다면 모두 일반쓰레기로 버려주세요.
+      </p>
   </div>
-
+  </div>
   
     <!-- 추천 영상 -->
-    <div class="video_text">Videos</div>
+    <div class="video">
+    <p class="video_text">친환경 생활, 더 알아가기_    <img src="https://cdn-icons-png.flaticon.com/512/1598/1598431.png" width="64px" height="64px"></p>
     <div class="videos">
-      <iframe class="video1" width="500" height="280" src="https://www.youtube.com/embed/k8Ov_zW2NPo" title="YouTube video player" 
+      <iframe width="500" height="280" src="https://www.youtube.com/embed/EPwaWLWDIiM" title="YouTube video player" 
+      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+      <iframe width="500" height="280" src="https://www.youtube.com/embed/k8Ov_zW2NPo" title="YouTube video player" 
       frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
       allowfullscreen></iframe>
-      <iframe width="500" height="280" src="https://www.youtube.com/embed/yYQCHZbrgB4" title="YouTube video player" 
-      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-      allowfullscreen></iframe>
-      <iframe width="500" height="280" src="https://www.youtube.com/embed/lliiwxe6quk" title="YouTube video player" 
-      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-      allowfullscreen></iframe>
+      <iframe width="500" height="280" src="https://www.youtube.com/embed/uzM7vOm7aGA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe width="500" height="280" src="https://www.youtube.com/embed/kRI9uNfuMh8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
+  </div>
   </main>
+  <script src="main page.js"></script>
 </body>
+</html>
