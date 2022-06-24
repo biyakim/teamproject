@@ -1,10 +1,10 @@
 
         * { box-sizing: border-box; margin: 0; padding: 0; }
         .header {
-            background-color: #475d9f;
-            color: #fff;
+            background-color: #377245;
+            color: black;
             height: 42px;
-            border-bottom: 1px solid #2c3863;
+            border-bottom: 1px solid #377245;
         }
         .search {
             position: absolute;
@@ -12,8 +12,8 @@
             right: 50px;
         }
         .searchbar {
-            border: 1px solid #2c3863;
-            background-color: #323f6b;
+            border: 1px solid #377245;
+            background-color: #afddba;
             width: 100%;
             border-radius: 4px;
             padding: 6px; margin-top: 7px;
@@ -21,7 +21,7 @@
         }
 
         .container {
-            background-color: #d7d8dc;
+            background-color: black;
         }
     
     
@@ -37,7 +37,7 @@
             margin-bottom: 10px;
         }
         .title {
-            color: #6184dd;
+            color: black;
             font-weight: 600;
         }
         .content {
