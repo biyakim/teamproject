@@ -84,3 +84,6 @@ button:hover {
     transition: 0.7s;
     border: 2px solid #969761;
 }
+.footer{
+    margin-left: 1000px;
+}
