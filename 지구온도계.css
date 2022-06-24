@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #eaeaea80;
+}
+.left {
+    float: left;
+    margin-top: 3%;
+    width: 50%;
+    height: 600px;
+}
+.right {
+    margin-top: 3%;
+    float: left;
+    width: 50%;
+    height: 600px;
+}
+.left>img {
+    margin-top: 40px;
+}
+#click_btn {
+    position: relative;
+    top: -35%;
+    left: -19%;
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+    border: 2px solid #fff;
+    background-color: #377245;
+    cursor: pointer;
+    transition: 1.5s;
+}
+#click_btn:hover {
+    transform: translateX(14px);
+    transition: 1.5s;
+}
+#click_message {
+    position: relative;
+    bottom: 42%;
+    left: 58%;
+    text-align: center;
+    width: 300px;
+    height: 60px;
+    color: white;
+    background-color: #377245;
+    border-radius: 30px;
+}
+#click_message>p {
+    position: relative;
+    top: 30%;
+}
+.earth_img {
+    position: relative;
+    right: 44%;
+    bottom: 80%;
+    height: 50px;
+    width: 50px;
+}
+#img {
+    margin-right: 20px;
+    margin-top: 50px;
+    float: right;
+    width: 540px;
+    height: 480px;
+    border-radius: 20px;
+}
+.one, .two, .three {
+    margin-left: 20px;
+    margin-top: 30px;
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    line-height: 30px;
+    border: none;
+    background-color: #969761;
+    color: white;
+    cursor: pointer;
+}
+button:hover {
+    background-color: white;
+    color:#000;
+    transition: 0.7s;
+    border: 2px solid #969761;
+}
