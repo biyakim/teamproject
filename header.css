@@ -1,9 +1,11 @@
 /* Header */
 body {
     margin: 0px;
+    z-index: 100;
 }
 main {
     padding-top: 60px;
+
 }
 header {
     position: fixed;
@@ -48,4 +50,5 @@ header {
 
 .RTT {
     margin-top: -3px;
+    cursor: pointer;
 }

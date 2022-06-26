@@ -2,85 +2,149 @@
     margin: 0;
     padding: 0;
 }
-body {
-    background-color: #eaeaea80;
-}
 .left {
+    border: 0.01rem solid rgb(172, 172, 172);
+    flex: auto;
     float: left;
-    margin-top: 3%;
-    width: 50%;
-    height: 600px;
+    background-color: #fff;
+    width: 310px;
+    height: auto;
+    border-radius: 38px 0 38px 0;
+    opacity: 0.9;
+    margin-left: 3rem;
+    margin-top: 3rem;
+}
+.left>p,h3 {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    word-break:keep-all;
+}
+.left>:nth-child(4) {
+    font-weight: bolder;
+    color: #969761;
 }
 .right {
-    margin-top: 3%;
-    float: left;
-    width: 50%;
-    height: 600px;
+    margin-top: 2.5rem;
+    float: right;
+    width: 70%;
+    height: auto;
 }
-.left>img {
-    margin-top: 40px;
+.click_btn1 {
+    top: 2.6rem;
+    left: -9.3rem;
+    background-color: #377245;
 }
-#click_btn {
+#click_btn2 {
+    top: -26.2rem;
+    left: 23rem;
+    background-color: #F4C31E;
+}
+#click_btn3 {
+    background-color: #DA6A3A;
+    top: -39.4rem;
+    left: 23rem;
+}
+.click_btn1, #click_btn2, #click_btn3 {
     position: relative;
-    top: -35%;
-    left: -19%;
+    cursor: pointer;
     width: 24px;
     height: 24px;
     border-radius: 12px;
     border: 2px solid #fff;
-    background-color: #377245;
-    cursor: pointer;
-    transition: 1.5s;
-}
-#click_btn:hover {
-    transform: translateX(14px);
-    transition: 1.5s;
 }
 #click_message {
+    top: -16rem;
+    left: 28rem; 
+    background-color: #377245;
+}
+#click_message2 {
+    bottom: 29rem;
+    left: 28rem;
+    background-color: #F4C31E;
+}
+#click_message3 {
+    bottom: 42rem;
+    left: 28rem;
+    background-color: #DA6A3A;
+}
+.right>div { /*click_message1,2,3....*/
+    /* visibility: hidden; */
     position: relative;
-    bottom: 42%;
-    left: 58%;
-    text-align: center;
+    text-align: center;    
     width: 300px;
     height: 60px;
     color: white;
-    background-color: #377245;
+    cursor: pointer;
     border-radius: 30px;
-}
-#click_message>p {
-    position: relative;
-    top: 30%;
+    transition: 1.5s;
 }
 .earth_img {
     position: relative;
     right: 44%;
-    bottom: 80%;
+    bottom: 50%;
     height: 50px;
     width: 50px;
 }
-#img {
-    margin-right: 20px;
-    margin-top: 50px;
-    float: right;
-    width: 540px;
-    height: 480px;
-    border-radius: 20px;
+.card-title {
+    color:#686868;
+    font-weight: 550;
+    font-size: medium;
 }
-.one, .two, .three {
-    margin-left: 20px;
-    margin-top: 30px;
-    width: 150px;
-    height: 150px;
-    border-radius: 100px;
-    line-height: 30px;
-    border: none;
-    background-color: #969761;
+#row,#row2 {
+    display: none;
+    transition: 2s;
+}
+/* Header */
+main {
+    padding-top: 60px;
+}
+header {
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    padding: 1rem;
     color: white;
-    cursor: pointer;
+    background-color: #377245;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
-button:hover {
-    background-color: white;
-    color:#000;
+.nav_items >li {
+    list-style: none;
+    font-size: smaller;
+    float: left;
+    padding-right: 90px;
+}
+.nav_items>li>button {
+    background-color: #377245;
+    border: none;
+    color: aliceblue;
+}
+.symbol_mark{
+    padding-left: 10px;
+    margin-bottom: 5px;
+    width: 40px;
+    height: 30px;
+}
+.nav_items >li>button:hover {
+    /* box-shadow: 200px 0 0 0 rgba(0,0,0,0.25) inset,  */
+    box-shadow: 200px 0 0 0  rgba(24, 220, 116, 0.25) inset;
+    border-radius: 2px;
     transition: 0.7s;
-    border: 2px solid #969761;
+}
+.button_mark {
+    background-color: #377245;
+    color:aliceblue;
+    border: none;
+    height: 30px;
+}
+
+.RTT {
+    margin-left: 0.5rem;
+    font-weight: bold;
+    font-size: 28px;
+    margin-top: -3px;
+    cursor: pointer;
 }
