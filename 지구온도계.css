@@ -69,7 +69,6 @@
     background-color: #DA6A3A;
 }
 .right>div { /*click_message1,2,3....*/
-    /* visibility: hidden; */
     position: relative;
     text-align: center;    
     width: 300px;
@@ -91,9 +90,17 @@
     font-weight: 550;
     font-size: medium;
 }
-#row,#row2 {
-    display: none;
-    transition: 2s;
+.row {
+    visibility: hidden;
+}
+.row2 {
+    visibility: hidden;
+}
+.show_row2 {
+    visibility: visible;
+}
+.show_row {
+    visibility: visible;
 }
 /* Header */
 main {
@@ -103,7 +110,7 @@ header {
     z-index: 100;
     position: fixed;
     width: 100%;
-    height: 60px;
+    height: 50px;
     padding: 1rem;
     color: white;
     background-color: #377245;
