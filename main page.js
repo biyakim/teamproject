@@ -19,3 +19,9 @@ function deleteItem() {
     const li = e.target.parentElement;
     li.remove();
 }
+const RTTBtn = document.querySelector('symbol_mark');
+const menu = document.querySelector('.navbar_menu');
+
+RTTBtn.addEventListener('click',() => {
+    menu.classList.toggle('avtive');
+});

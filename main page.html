@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Reduce temperature</title>
-  <link rel="stylesheet" href="header.css" />
+  <!-- <link rel="stylesheet" href="header.css" /> -->
   <link rel="stylesheet" href="main.css" />
   <!-- boxicons -->
   <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
@@ -17,12 +17,14 @@
 
 <body>
   <header>
-    <button class="button_mark" onclick="location.href='main page.html'"><h1 class="RTT">RTT<img class="symbol_mark" src="organic-product.png"></h1></button>
+    <nav class="navbar">
+    <button class="button_mark" onclick="location.href='main page.html'"><h1 class="RTT">RTT<img class="symbol_mark" src="organic-product.png"></button></h1>
     <nav class="nav_items">
       <li><button onclick="location.href='지구온도계.html'">지 구 온 도 계</button></li>
-      <li><button onclick="window.open('main page.html')">쓰레기 배출 요령</button></li>
       <li><button onclick="location.href='자투리레시피.html'">자 투 리 레 시 피</button></li>
       <li><button onclick="location.href='소통방.html'">소 통 방</button></li>
+    </nav>
+    
     </nav>
   </header>
 
@@ -68,13 +70,28 @@
   </main>
   <script src="main page.js"></script>
   <footer>
-    <div class="footer">
-    <h1>고객 센터</h1>
-    <li><button onclick="location.href='공지사항.html'">공지사항</button></li>
-    <li><button onclick="location.href='이용안내.html'">이용안내</button></li>
-    <li><button onclick="location.href='FAQ.html'">FAQ</button></li>
-    <li><button onclick="location.href='문의.html'">문의</button></li>
+    <div class="notice" >공지사항</div>
+    <div class="line">
+      <div>Developers</div>
+      <div>Kim Biya</div>
+      <div>Ha Jin</div>
     </div>
+    <div class="line">
+      <div>Blog</div>
+    </div>
+    <div class="line">
+      <div>Contacts</div>
+      <div>031-1234-5678</div>
+    </div>
+    <div class="line">
+      <div>email</div>
+      <div>w1234@e-mirim.hs.kr</div>
+    </div>
+    <div class="line">
+      <div>FAQ</div>
+    </div>
+
+    <div class="brand">Reduce The Temperature<img src="organic-product.png"></div>
   </footer>
 </body>
 </html>
