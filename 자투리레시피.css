@@ -1,44 +1,33 @@
-.search_txt {
-  font-family: 'Gowun Batang', serif;
-    outline:0;
-    border:0;
-    display:block;
-    width:100%;
-    padding:30px;
-    padding-right:50px;
-    padding-left: 80px;
-    box-sizing:border-box;
-    font-size:1rem;
-    opacity: 0.7;
-    border-radius: 8px;
-}
-.search_btn {
-  margin-left: 550px;
-  margin-bottom: 20px;
-  height: 40px;
-  width: 40px;
-  border: none;
-  background-color: #fff;
-}
-.background_img{
-  height: 580px;
-  width: 100%;
-  opacity: 0.5;
-}
-.background_img {
-  position: relative;
-  height: 100%;
-  top: 0;
-  left: 0;
-}
-.ssam {
-  
-  position: absolute;
+.search {
   margin-top: 50px;
-  margin-left: 300px;
-  left: 30px;
+  position: relative;
+  width: 300px;
+  margin-left: 600px;
+  margin-bottom: 20px;
 }
-@media screen and (max-width:768px) {
+
+input {
+  width: 100%;
+  border: 1px solid #bbb;
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-size: 14px;
+}
+.s{
+    position : absolute;
+    width: 17px;
+    top: 10px;
+    right: 12px;
+    margin: 0;
+}
+main{
+  background-color: rgb(245, 248, 213);
+}
+.ssam{
+  margin-left: 300px;
+  margin-top: 50px;
+}
+@media screen and (min-width:500px) {
   .navbar{
     flex-direction: column;
     align-items: flex-start;
@@ -54,7 +43,40 @@
     width: 100%;
     text-align: center;
   }
-  .search_txt{
-    width: 100px;
+  .search{
+    margin-left: 0px;
+    left: 90px;
+  }
+  .ssam{
+    margin-left: 0px;
+    margin-top: 10px;
+    padding: 50px;
+    width: 400px;
+    height: 400px;
+  }
+}
+@media screen and (min-width:834px) {
+  .navbar{
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 24px;
+  }
+  .nav_items{
+    /* flex-direction: column; */
+    align-items: center;
+    width: 100%;
+    font-size: 1rem;
+  }
+  .nav_items li{
+    width: 100%;
+    text-align: center;
+  }
+  .search{
+    margin-left: 150px;
+  }
+  .ssam{
+    margin-left: 100px;
+    width: 600px;
+    height: 500px;
   }
 }
