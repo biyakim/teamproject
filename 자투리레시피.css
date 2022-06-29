@@ -2,7 +2,7 @@
   margin-top: 50px;
   position: relative;
   width: 300px;
-  margin-left: 600px;
+  margin-left: 800px;
   margin-bottom: 20px;
 }
 
@@ -24,10 +24,10 @@ main{
   background-color: rgb(245, 248, 213);
 }
 .ssam{
-  margin-left: 300px;
+  margin-left: 550px;
   margin-top: 50px;
 }
-@media screen and (min-width:500px) {
+@media screen and (max-width:500px) {
   .navbar{
     flex-direction: column;
     align-items: flex-start;
@@ -52,10 +52,10 @@ main{
     margin-top: 10px;
     padding: 50px;
     width: 400px;
-    height: 400px;
+    height: 600px;
   }
 }
-@media screen and (min-width:834px) {
+@media (min-width:834px) and (max-width:1199px){
   .navbar{
     flex-direction: column;
     align-items: flex-start;
@@ -72,11 +72,11 @@ main{
     text-align: center;
   }
   .search{
-    margin-left: 150px;
+    margin-left: 400px;
   }
   .ssam{
-    margin-left: 100px;
-    width: 600px;
-    height: 500px;
+    margin-left: 200px;
+    width: 800px;
+    height: 650px;
   }
 }
