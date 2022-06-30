@@ -5,25 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reduce temperature</title>
+  <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/220/220182.png" type="image/x-icon">
     <!-- css 연결 -->
     <!-- <link rel="stylesheet" href="header.css" /> -->
     <link rel="stylesheet" href="소통방.css">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
-
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
   <header>
-    <button class="button_mark" onclick="location.href='main page.html'"><h1 class="RTT">RTT<img class="symbol_mark" src="organic-product.png"></h1></button>
-    <nav class="nav_items">
+    <button class="button_mark" onclick="location.href='main page.html'">
+      <h1 class="RTT">RTT
+        <img class="symbol_mark" src="organic-product.png">
+      </h1>
+    </button>
+    <nav class="nav_items" id="nav-items">
       <li><button onclick="location.href='지구온도계.html'">지 구 온 도 계</button></li>
       <li><button onclick="location.href='자투리레시피.html'">자 투 리 레 시 피</button></li>
       <li><button onclick="location.href='소통방.html'">소 통 방</button></li>
     </nav>
+    <div class="nav-toggle" id="nav-toggle">
+      <i class='bx bx-menu' id="bx-menu"style='color:#ffffff'></i>
+    </div>
   </header>
     
   <main>
     <div class="menu">소통방</div>
-    <input placeholder="" class="search"><img src="https://cdn-icons.flaticon.com/png/512/2811/premium/2811806.png?token=exp=1656210503~hmac=d670345b1ffbe5fa4c95a74dc86ff1a7"></div>
+    <input placeholder="" class="search">
+    <img id="pencil_btn" onclick="location.href='writingMenu.html'" src="pencil.png">
+      <img src="https://cdn-icons.flaticon.com/png/512/2811/premium/2811806.png?token=exp=1656210503~hmac=d670345b1ffbe5fa4c95a74dc86ff1a7">
+    </div>
     <ul class="nav nav-tabs">
       <li class="nav-item">
         <a class="nav-link active" aria-current="page" href="#">list</a>
@@ -48,7 +59,6 @@
           <p class="content">아니 내가 콘센트에 실수로 물을 흘렸는데 얘가 고장남 그래서 처리하려고 하.......</p>
       </div>
     </div>
-    <img id="pencil_btn" onclick="location.href='writingMenu.html'" src="pencil.png">
     <div class="container">
       <div class="feed">
         <a class="title">님들 고장난 콘센트는 어떻게 버림?</a>
@@ -75,6 +85,30 @@
     </div>
 
   </main>
-  <script src="소통방.js"></script>
+  <footer>
+    <div class="notice" >공지사항</div>
+    <div class="line">
+      <div>Developers</div>
+      <div>Kim Biya</div>
+      <div>Ha Jin</div>
+    </div>
+    <div class="line">
+      <div>Blog</div>
+    </div>
+    <div class="line">
+      <div>Contacts</div>
+      <div>031-1234-5678</div>
+    </div>
+    <div class="line">
+      <div>email</div>
+      <div>w1234@e-mirim.hs.kr</div>
+    </div>
+    <div class="line">
+      <div>FAQ</div>
+    </div>
+
+    <div class="brand">Reduce The Temperature<img src="organic-product.png"></div>
+  </footer>
+  <script src="show-menu.js"></script>
 </body>
 </html>

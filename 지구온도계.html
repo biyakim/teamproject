@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reduce temperature</title>
+  <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/220/220182.png" type="image/x-icon">
+
     <!-- css 연결 -->
     <!-- <link rel="stylesheet" href="header.css" /> -->
     <link rel="stylesheet" href="지구온도계.css">
@@ -14,12 +16,19 @@
 </head>
 <body>
   <header>
-    <div class="button_mark" onclick="location.href='main page.html'"><h1 class="RTT">RTT<img class="symbol_mark" src="organic-product.png"></h1></div>
-    <nav class="nav_items">
+    <div class="button_mark" onclick="location.href='main page.html'">
+      <h1 class="RTT">RTT
+        <img class="symbol_mark" src="organic-product.png">
+      </h1>
+    </div>
+    <nav class="nav_items" id="nav_items">
       <li><button onclick="location.href='지구온도계.html'">지 구 온 도 계</button></li>
       <li><button onclick="location.href='자투리레시피.html'">자 투 리 레 시 피</button></li>
       <li><button onclick="location.href='소통방.html'">소 통 방</button></li>
     </nav>
+    <div class="nav-toggle" id="nav-toggle">
+      <i class='bx bx-menu' id="bx-menu"style='color:#ffffff'></i>
+    </div>
   </header>
     
     <main>
@@ -54,7 +63,7 @@
         <img class="card-img-top" src="https://www.palnews.co.kr/news/photo/202205/213305_52806_4817.jpg">
         <div class="card-body">
           <h4 class="card-title">지속되는 가뭄</h4>
-          <p class="card-text">최근 기후변화에 의해 폭염-가뭄 발생이 가능한 지면과 대기 상태를 가진 지역이 넓어졌다. </p>
+          <p class="card-text">최근 기후변화에 의해 폭염-가뭄 발생이 가능한 지면과 대기 상태를 가진 지역이 넓어졌다. 기후변화에 따라 최근 들어 폭염-가뭄-산불로 이어지는 복합 극한기후가 과거보다 더 자주 발생하고 있다. 우리나라도 폭염으로 인한 급성 가뭄과 여름철 산불의 발생이 잦아지고 있다.</p>
           <a href="https://blog.naver.com/kma_131/222609380354" class="btn btn-primary" target="_blank">more information</a>
         </div>
         </div>
@@ -133,9 +142,32 @@
     </div>
   </div>
   </main>
+  <footer>
+    <div class="notice" >공지사항</div>
+    <div class="line">
+      <div>Developers</div>
+      <div>Kim Biya</div>
+      <div>Ha Jin</div>
+    </div>
+    <div class="line">
+      <div>Blog</div>
+    </div>
+    <div class="line">
+      <div>Contacts</div>
+      <div>031-1234-5678</div>
+    </div>
+    <div class="line">
+      <div>email</div>
+      <div>w1234@e-mirim.hs.kr</div>
+    </div>
+    <div class="line">
+      <div>FAQ</div>
+    </div>
 
+    <div class="brand">Reduce The Temperature<img src="organic-product.png"></div>
+  </footer>
     <script src="지구온도계.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-
+    <!-- <script src="show-menu.js"></script> -->
 </body>
 </html>

@@ -95,9 +95,13 @@
     max-width: 540px;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 834px) and (max-width: 1199px) {
   .container-md, .container-sm, .container {
     max-width: 720px;
+  }
+  .show-row {
+    position: absolute;
+    margin-top: -10px;
   }
 }
 @media (min-width: 992px) {
@@ -108,6 +112,9 @@
 @media (min-width: 1200px) {
   .container-xl, .container-lg, .container-md, .container-sm, .container {
     max-width: 1140px;
+  }
+  .row {
+    display: none;
   }
 }
 @media (min-width: 1400px) {
