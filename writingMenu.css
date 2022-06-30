@@ -1,0 +1,21 @@
+img {
+    width: 52px;
+    height: 52px;
+    cursor: pointer;
+    
+}
+.home {
+    margin-top: 2rem;
+    text-align: center;
+}
+.mb-3 {
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+.submit {
+    text-align: right;
+    margin-right: 80px;
+}
+#exampleFormControlTextarea1 {
+    height: 400px;
+}
