@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reduce temperature</title>
+  <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/220/220182.png" type="image/x-icon">
+
+    <!-- css 연결 -->
+    <!-- <link rel="stylesheet" href="header.css" /> -->
+    <link rel="stylesheet" href="지구온도계.css">
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+  <link href="bootstrap/css/bootstrap-grid.css" rel="stylesheet">
+  <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="button_mark" onclick="location.href='main page.html'">
+      <h1 class="RTT">RTT
+        <img class="symbol_mark" src="organic-product.png">
+      </h1>
+    </div>
+    <nav class="nav_items" id="nav_items">
+      <li><button onclick="location.href='지구온도계.html'">지 구 온 도 계</button></li>
+      <li><button onclick="location.href='자투리레시피.html'">자 투 리 레 시 피</button></li>
+      <li><button onclick="location.href='소통방.html'">소 통 방</button></li>
+    </nav>
+    <div class="nav-toggle" id="nav-toggle">
+      <i class='bx bx-menu' id="bx-menu"style='color:#ffffff'></i>
+    </div>
+  </header>
+    
+    <main>
+      <div class="left">
+        <h3>Global Warming Scenario :</h3>
+        <p>지구의 온도 상승으로 인해 달라지는 기후변화 (폭염,한파,폭우..)</p>
+        <p>이런 지구 온난화가 지속될수록 이상 기후현상으로 막대한 피해!</p>
+        <p>그렇다면, 지구의 온도가 1도 오를 때마다 세상은 어떻게 변할까요?</p>
+      </div>
+      <div class="right">
+        <img src="https://cdn-icons.flaticon.com/png/512/2100/premium/2100130.png?token=exp=1655598830~hmac=d1be20c7c0a993e7b3de2d004cddc083">
+          <button class="click_btn1" id="click_btn1"></button>
+          <div id="click_message" >
+          <p> 지구의 온도가 1도 오르면?</p>
+          <img class="earth_img" src="https://cdn-icons-png.flaticon.com/512/614/614643.png">
+      </div>
+        <button id="click_btn2" onclick="show_card('#row2')"></button>
+        <div id="click_message2" >
+          <p> 지구의 온도가 2도 오르면?</p>
+          <img class="earth_img" src="https://cdn-icons-png.flaticon.com/512/614/614643.png">
+        </div>
+        <button id="click_btn3"></button>
+        <div id="click_message3" >
+          <p> 지구의 온도가 3도 오르면?</p>
+          <img class="earth_img" src="https://cdn-icons-png.flaticon.com/512/614/614643.png">
+        </div>
+      </div>
+    </div>
+    <div class="row" id="row">
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="https://www.palnews.co.kr/news/photo/202205/213305_52806_4817.jpg">
+        <div class="card-body">
+          <h4 class="card-title">지속되는 가뭄</h4>
+          <p class="card-text">최근 기후변화에 의해 폭염-가뭄 발생이 가능한 지면과 대기 상태를 가진 지역이 넓어졌다. 기후변화에 따라 최근 들어 폭염-가뭄-산불로 이어지는 복합 극한기후가 과거보다 더 자주 발생하고 있다. 우리나라도 폭염으로 인한 급성 가뭄과 여름철 산불의 발생이 잦아지고 있다.</p>
+          <a href="https://blog.naver.com/kma_131/222609380354" class="btn btn-primary" target="_blank">more information</a>
+        </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="https://www.water.or.kr/images/egovframework/renewal/contents/img_infographic03.jpg">
+        <div class="card-body">
+          <h4 class="card-title">물 부족 인구 5천만명</h4>
+          <p class="card-text">기후변화와 인구 증가가 맞물리면서 물을 제때 이용하지 못하는 전 세계 인구가 2050년이면 50억명을 넘어설 것이라는 전망이 나왔다.</p>
+          <a href="https://www.yna.co.kr/view/AKR20200903054300009" class="btn btn-primary" target="_blank">more information</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="https://pds.joongang.co.kr/news/component/htmlphoto_mmdata/201912/26/a1a3ebbf-d6a7-4753-8120-8e934c0ca1b9.jpg">
+        <div class="card-body">
+          <h4 class="card-title">10% 육상생물 멸종 위기</h4>
+          <p class="card-text">높아진 해수면이 수만가지 생물종이 서식하는 섬을 집어삼키고 있다. 기후변화는 아주 오래 전부터 지구 환경에 맞춰 진화해 온 1,200만 종 생물의 서식 환경을 살기에 적합하지 않은 상태로 바꾸어놓고 있다. </p>
+          <a href="https://www.greenpeace.org/korea/update/6388/blog-ce-top5-animals-endangered-by-global-warming/" class="btn btn-primary" target="_blank">more information</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="https://img0.yna.co.kr/photo/yna/YH/2013/08/21/PYH2013082113960001300_P2.jpg">
+        <div class="card-body">
+          <h4 class="card-title">기후변화로 인한 사망 30만 명</h4>
+          <p class="card-text">대부분의 사망자가 추위에 노출돼 발생했지만, 지구 온난화의 가속화로 이러한 추세가 역전될 가능성이 크다고 분석했다. 2000년부터 2019년까지 추위 관련 사망은 0.5% 감소했고 고온 관련 사망률은 0.2% 증가했다.</p>
+          <a href="https://www.yna.co.kr/view/AKR20130824033000004" class="btn btn-primary" target="_blank">more information</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row" id="row2">
+    <div class="col">
+      <div class="card" style="width: 18rem;">
+        <img src="data:image/jpeg;base64,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" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">사용 가능한 물 20~30% 감소</h5>
+          <p class="card-text">우리가 무분별하게 사용한 물이 기후변화에 악영향을 주고, 물 공급을 어렵게 만드는 악순환을 초래하고 있는 셈이다.</p>
+          <a href="https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=mesns&logNo=221856651478" class="btn btn-primary"  target="_blank">more information</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card" style="width: 18rem;">
+        <img src="https://img.etnews.com/photonews/1706/968255_20170627152116_982_0001.jpg" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">해빙으로 해수면 7m 상승</h5>
+          <p class="card-text">빙하가 녹으면서 해수면이 상승하고, 그로 인해 전세계 각국 해안가 도시들이 상당수 물에 잠기는 상황이 발생할 수 있다고 경고했다.</p>
+          <a href="https://mobile.newsis.com/view.html?ar_id=NISX20171201_0000164849" class="btn btn-primary"  target="_blank">more information</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card" style="width: 18rem;">
+        <img src="https://static.news.zumst.com/images/25/2020/03/02/e451d2a229ff4f0faf47a60bd889e20d.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">15~40% 북극생물 멸종 위기</h5>
+          <p class="card-text">기후 변화 때문에 멸종위기종으로 등록된 것은 세계적으로 북극곰이 처음이었다. 세계 최대 북극곰 서식지인 캐나다의 허드슨만 빙하가 1주일씩 빨리 녹을 때마다 북극곰들은 약 10kg씩 체중이 감소한 채 해안가를 찾아오고 있다. </p>
+          <a href="#" class="btn btn-primary" target="_blank">more information</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card" style="width: 18rem;">
+        <img src="https://www.thedailypost.kr/news/photo/202104/81056_75146_3426.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">말라리아 노출 4천만~6천만 명</h5>
+          <p class="card-text">삼림벌채로 서식지를 잃은 숲모기들이 인간이 사는 도심으로 옮겨갔고 기후변화로 모기가 생존할 수 있는 환경이 곳곳에 형성되면서 모기 매개 감염병 노출 지역이 확대됐다는 것이다.</p>
+          <a  target="_blank" href="http://msdmanuals.com/ko-kr/%ED%99%88/%EA%B0%90%EC%97%BC/%EA%B8%B0%EC%83%9D%EC%B6%A9-%EA%B0%90%EC%97%BC-%EC%9E%A5%EC%99%B8-%EC%9B%90%EC%83%9D%EB%8F%99%EB%AC%BC/%EB%A7%90%EB%9D%BC%EB%A6%AC%EC%95%84" class="btn btn-primary">more information</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  </main>
+  <footer>
+    <div class="notice" >공지사항</div>
+    <div class="line">
+      <div>Developers</div>
+      <div>Kim Biya</div>
+      <div>Ha Jin</div>
+    </div>
+    <div class="line">
+      <div>Blog</div>
+    </div>
+    <div class="line">
+      <div>Contacts</div>
+      <div>031-1234-5678</div>
+    </div>
+    <div class="line">
+      <div>email</div>
+      <div>w1234@e-mirim.hs.kr</div>
+    </div>
+    <div class="line">
+      <div>FAQ</div>
+    </div>
+
+    <div class="brand">Reduce The Temperature<img src="organic-product.png"></div>
+  </footer>
+    <script src="지구온도계.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <!-- <script src="show-menu.js"></script> -->
+</body>
+</html>
